@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+   <div id="main">
+      <div id="playerSection">
+         <audio id="audioElement"></audio>
+         <audio src='./audio/kola_-_chi_razom_(z2.fm).mp3'></audio>
+         <div id="player"></div>
+         <div id="playerFunctions">
+            <div id="playerImg"></div>
+            <div id="firstBlock">
+               <div id="play">
+                  <span class="iconify playIcon" data-icon="ci:play-circle-outline" style="color: #ffffff;" data-width="35" data-height="35"></span>
+                  <span class="iconify playIcon" data-icon="eva:pause-circle-outline" style="color: #ffffff;" data-width="35" data-height="35"></span>
+               </div>
+               <div id="songName">
+                  <p id="artist"></p>
+                  <p id="song"></p>
+               </div>
+               <div id="arrows">
+                  <p id="next">
+                     <span class="iconify"  data-icon="bx:right-arrow-circle" style="color: #ffffff;" data-width="35" data-height="35"></span>
+                  </p>
+                  <p id="prewious">
+                     <span class="iconify" data-icon="bx:left-arrow-circle" style="color: #ffffff;" data-width="35" data-height="35"></span>
+                  </p>
+               </div>
+            </div>
+            <div id="secondBlock">
+               <div class="slidecontainer">
+                  <input type="range" class="slider" id="myRange" value="0">
+               </div>
+               <div id="time">
+                  <p id="durringTime"></p>
+                  <p id="duration"></p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+   <script src="./js/script.js"></script>
+</body>
+
+</html>
